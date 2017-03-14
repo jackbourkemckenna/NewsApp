@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     // Will show the string "data" that holds the results
     TextView results;
     // URL of object to be parsed
-    String JsonURL = "https://raw.githubusercontent.com/ianbar20/JSON-Volley-Tutorial/master/Example-JSON-Files/Example-Object.JSON";
+    String JsonURL = "https://newsapi.org/v1/articles?source=bbc-news&sortBy=top&apiKey=83fa1a300dd14c40be636b62b442e080";
     // This string will hold the results
     String data = "";
     // Defining the Volley request queue that handles the URL request concurrently
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        // Creates the Volley request queue
+        // Creates the Volley request queue  eee
         requestQueue = Volley.newRequestQueue(this);
 
         // Casts results into the TextView found within the main layout XML with id jsonData
